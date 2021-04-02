@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="buynow.js" async></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="theme-color" content="#ffffff">
+  <title>Buy Now</title>
+</head>
+
+<body>
+
+  <div class="toplogo">
+    <!--logo section-->
+    <a href="index.html">
+      <img src="images/full logo.png" alt="logo">
+    </a>
+  </div>
+  <div>
+    <!--responsive main image-->
+    <div>
+      <img class="M_mainimg" id="mainimg" src="images/wind-power-4380274_19201.jpg" alt="main img">
+      <img class="D_mainimg" src="images/wind-power-4380274_19202.jpg" alt="main img">
+    </div>
+  </div><br>
+
+<div class="midcontent">
+
+  <div class="cartnav">
+    <div class="fav"><input id="fav" type="image" src="images/fav.png" name="favorites" alt="favorites" /></div>
+    <div class="cartc"><button id="cart"><img src="images/cart.png" alt="cart"></button></div>
+  </div>
+  <p class="buynow_title">Products</p><br>
+
+
+  <div class="manufacture">
+
+    <input type="radio" id="ecoproductssl" name="manufacture" value="ecoproductssl" checked onclick="toggle(0)">
+    <label for="ecoproductssl">Eco-Products SL</label>
+
+    <input type="radio" id="ecowarelanka" name="manufacture" value="ecowarelanka" onclick="toggle(1)">
+    <label for="ecowarelanka">Ecoware Lanka</label><br>
+
+    <input type="radio" id="trickeldown" name="manufacture" value="trickeldown" onclick="toggle(2)">
+    <label for="trickeldown">Trickeldown</label>
+
+    <input type="radio" id="backtoearth" name="manufacture" value="backtoearth" onclick="toggle(3)">
+    <label for="backtoearth">Back to Earth</label>
+
+  </div><br>
+
+
+  <div id="cartWindow" class="cartWindowc">
+    <div class="cartContent">
+      <br>
+      <div>
+        <span class="close">&times;</span>
+      </div>
+      <br>
+      <div class="carth1">
+        <h1>Cart</h1>
+      </div>
+      <table class="cartTable">
+        <div class="carthead">
+          <tr id="carttop" class="carttop">
+            <th colspan="2">Product</th>
+            <th class="pricecol">Price</th>
+            <th class="quantitycol" colspan="2">Quantity</th>
+          </tr>
+        </div>
+        <div class="addedProducts">
+
+        </div>
+      </table>
+      <div class="endcart"> 
+        <div class="cartTotal">Total</div>
+        <div class="cartPrice">LKR0</div> <br>
+      </div>
+      <br>
+      <button class="placeorder">Place order</button>
+      <br>
+      <br>
+    </div>
+  </div>
+
+
+  <div id="favoritesWindow" class="favoritesWindowc">
+    <div class="favoritesContent">
+      <br>
+      <div>
+        <span class="closef">&times;</span>
+      </div>
+      <br>
+      <div class="favoritesh1">
+        <h1>Favorites</h1>
+      </div>
+      <table class="favoritesTable">
+        <div class="favoriteshead">
+          <tr id="favoritestop" class="favoritestop">
+            <th colspan="2">Product</th>
+            <th class="pricecol">Price</th>
+            <th class="quantitycol" colspan="2">Quantity</th>
+          </tr>
+        </div>
+        <div class="addedProducts">
+
+        </div>
+      </table>
+
+      <br>
+      
+      <br>
+      <button class="placeorderFav">Order favorites</button>
+      <br>
+      <br>
+    </div>
+  </div>
+
+  <div class="products_buynow">
+    <!--main content-->
+    <div class="ecoproductssl_products" id="ecoproductssl_products">
+      <article>
+        <div class="tiles">
+          <img class="item_image" src="images/bags_ecoproductssl.jpg" alt="image">
+          <p class="product_item">Eco-products SL Bag</p>
+
+          <div class="radio">
+                <form></form>
+            <input type="radio" id="small1" name="size1" value="small" class="small" checked>
+            <label for="small1">Small</label>
+
+            <input type="radio" id="medium1" name="size1" value="medium" class="small">
+            <label for="medium1">Medium</label>
+
+            <input type="radio" id="large1" name="size1" value="large" class="small">
+            <label for="large1">Large</label>
+          </form>
+          </div><br>
+          <div class="checkboxes">
+            <label class="container">
+              <input type="checkbox">Packaging
+              <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+              <input type="checkbox">Greeting cards
+              <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+              <input type="checkbox">Decoration
+              <span class="checkmark"></span>
+            </label>
+          </div><br>
+          <p class="product_price">LKR1000</p>
+          <button class="addtocart">Add to order</button>
+          <br>
+          <button class="fav_icon">Add to favorites</button>
+          <br>
+        </div>
+        <br>
+        <br>
+
+      </article>
+      <article>
+        <div class="tiles">
+          <img class="item_image" src="images/plates_ecoproductssl.jpg" alt="image">
+          <p class="product_item">Eco-products SL Plates</p>
+
+          <div class="radio">
+              <form></form>
+            <input type="radio" id="small2" name="size2" value="small" class="small" checked>
+            <label for="small2">Small</label>
+
+            <input type="radio" id="medium2" name="size2" value="medium" class="small">
+            <label for="medium2">Medium</label>
+
+            <input type="radio" id="large2" name="size2" value="large" class="small">
+            <label for="large2">Large</label>
+          </form>
+          </div><br>
+          <div class="checkboxes">
+            <label class="container">
+              <input type="checkbox">Packaging
+              <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+              <input type="checkbox">Greeting cards
+              <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+              <input type="checkbox">Decoration
+              <span class="checkmark"></span>
+            </label>
+          </div><br>
+          <p class="product_price">LKR2000</p>
+          <button class="addtocart">Add to order</button>
+          <br>
+          <button class="fav_icon">Add to favorites</button>
+          <br>
+        </div>
+        <br>
+        <br>
+
+      </article>
+      <article>
+        <div class="tiles">
+          <img class="item_image" src="images/mugs_ecoproductssl.jpg" alt="image">
+          <p class="product_item">Eco-products SL Mug</p>
+
+          <div class="radio">
+                
+            <input type="radio" id="small3" name="size3" value="small" class="small" checked>
+            <label for="small3">Small</label>
+
+            <input type="radio" id="medium3" name="size3" value="medium" class="medium">
+            <label for="medium3">Medium</label>
+
+            <input type="radio" id="large3" name="size3" value="large" class="large">
+            <label for="large3">Large</label>
+
+          </div><br>
+          <div class="checkboxes">
+            <label class="container">
+              <input type="checkbox">Packaging
+              <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+              <input type="checkbox">Greeting cards
+              <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+              <input type="checkbox">Decoration
+              <span class="checkmark"></span>
+            </label>
+          </div><br>
+          <p class="product_price">LKR2500</p>
+          <button class="addtocart">Add to order</button>
+          <br>
+          <button class="fav_icon">Add to favorites</button>
+          <br>
+        </div>
+        <br>
+        <br>
+
+      </article>
+      <article>
+        <div class="tiles">
+          <img class="item_image" src="images/soap_ecoproductssl.jpg" alt="image">
+          <p class="product_item">Eco-products SL Soap</p>
+          <div class="radio">
+
+            <input type="radio" id="small4" name="size4" value="small" class="small" checked>
+            <label for="small4">Small</label>
+
+            <input type="radio" id="medium4" name="size4" value="medium" class="medium">
+            <label for="medium4">Medium</label>
+
+            <input type="radio" id="large4" name="size4" value="large" class="large">
+            <label for="large4">Large</label>
+
+          </div><br>
+          <div class="checkboxes">
+            <label class="container">
+              <input type="checkbox">Packaging
+              <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+              <input type="checkbox">Greeting cards
+              <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+              <input type="checkbox">Decoration
+              <span class="checkmark"></span>
+            </label>
+          </div><br>
+          <p class="product_price">LKR800</p>
+          <button class="addtocart">Add to order</button>
+          <br>
+          <button class="fav_icon">Add to favorites</button>
+          <br>
+        </div>
+        <br>
+        <br>
+
+      </article>
+    </div>
+    <div class="ecowarelanka_products" id="ecowarelanka_products">
+      <article>
+        <div class="tiles">
+          <img class="item_image" src="images/bags_ecowarelanka.jpg" alt="image">
+          <p class="product_item">Ecoware Lanka Bag</p>
+          <div class="radio">
+
+            <input type="radio" id="small5" name="size5" value="small" class="small" checked>
+            <label for="small5">Small</label>
+
+            <input type="radio" id="medium5" name="size5" value="medium" class="medium">
+            <label for="medium5">Medium</label>
+
+            <input type="radio" id="large5" name="size5" value="large" class="large">
+            <label for="large5">Large</label>
+
+          </div><br>
+          <div class="checkboxes">
+            <label class="container">
+              <input type="checkbox">Packaging
+              <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+              <input type="checkbox">Greeting cards
+              <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+              <input type="checkbox">Decoration
+              <span class="checkmark"></span>
+            </label>
+          </div><br>
+          <p class="product_price">LKR1000</p>
+          <button class="addtocart">Add to order</button>
+          <br>
+          <button class="fav_icon">Add to favorites</button>
+          <br>
+        </div>
+        <br>
+        <br>
+
+      </article>
+      <article>
+        <div class="tiles">
+          <img class="item_image" src="images/plates_ecowarelanka.jpg" alt="image">
+          <p class="product_item">Ecoware Lanka Plates</p>
+          <div class="radio">
+
+            <input type="radio" id="small6" name="size6" value="small" class="small" checked>
+            <label for="small6">Small</label>
+
+            <input type="radio" id="medium6" name="size6" value="medium" class="medium">
+            <label for="medium6">Medium</label>
+
+            <input type="radio" id="large6" name="size6" value="large" class="large">
+            <label for="large6">Large</label>
+
+          </div><br>
+          <div class="checkboxes">
+            <label class="container">
+              <input type="checkbox">Packaging
+              <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+              <input type="checkbox">Greeting cards
+              <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+              <input type="checkbox">Decoration
+              <span class="checkmark"></span>
+            </label>
+          </div><br>
+          <p class="product_price">LKR2000</p>
+          <button class="addtocart">Add to order</button>
+          <br>
+          <button class="fav_icon">Add to favorites</button>
+          <br>
+        </div>
+        <br>
+        <br>
+
+      </article>
+      <article>
+        <div class="tiles">
+          <img class="item_image" src="images/mugs_ecowarelanka.jpg" alt="image">
+          <p class="product_item">Ecoware Lanka Mug</p>
+          <div class="radio">
+
+            <input type="radio" id="small7" name="size7" value="small" class="small" checked>
+            <label for="small7">Small</label>
+
+            <input type="radio" id="medium7" name="size7" value="medium" class="medium">
+            <label for="medium7">Medium</label>
+
+            <input type="radio" id="large7" name="size7" value="large" class="large">
+            <label for="large7">Large</label>
+
+          </div><br>
+          <div class="checkboxes">
+            <label class="container">
+              <input type="checkbox">Packaging
+              <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+              <input type="checkbox">Greeting cards
+              <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+              <input type="checkbox">Decoration
+              <span class="checkmark"></span>
+            </label>
+          </div><br>
+          <p class="product_price">LKR2500</p>
+          <button class="addtocart">Add to order</button>
+          <br>
+          <button class="fav_icon">Add to favorites</button>
+          <br>
+        </div>
+        <br>
+        <br>
+
+      </article>
+      <article>
+        <div class="tiles">
+          <img class="item_image" src="images/soap_ecowarelanka.jpg" alt="image">
+          <p class="product_item">Ecoware Lanka Soap</p>
+          <div class="radio">
+
+            <input type="radio" id="small8" name="size8" value="small" class="small" checked>
+            <label for="small8">Small</label>
+
+            <input type="radio" id="medium8" name="size8" value="medium" class="medium">
+            <label for="medium8">Medium</label>
+
+            <input type="radio" id="large8" name="size8" value="large" class="large">
+            <label for="large8">Large</label>
+
+          </div><br>
+          <div class="checkboxes">
+            <label class="container">
+              <input type="checkbox">Packaging
+              <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+              <input type="checkbox">Greeting cards
+              <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+              <input type="checkbox">Decoration
+              <span class="checkmark"></span>
+            </label>
+          </div><br>
+          <p class="product_price">LKR800</p>
+          <button class="addtocart">Add to order</button>
+          <br>
+          <button class="fav_icon">Add to favorites</button>
+          <br>
+        </div>
+        <br>
+        <br>
+
+      </article>
+    </div>
+    <div class="trickeldown_products" id="trickeldown_products">
+      <article>
+        <div class="tiles">
+          <img class="item_image" src="images/bags_trickeldown.jpg" alt="image">
+          <p class="product_item">Trickeldown Bag</p>
+          <div class="radio">
+
+            <input type="radio" id="small9" name="size9" value="small" class="small" checked>
+            <label for="small9">Small</label>
+
+            <input type="radio" id="medium9" name="size9" value="medium" class="medium">
+            <label for="medium9">Medium</label>
+
+            <input type="radio" id="large9" name="size9" value="large"class="large">
+            <label for="large9">Large</label>
+
+          </div><br>
+          <div class="checkboxes">
+            <label class="container">
+              <input type="checkbox">Packaging
+              <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+              <input type="checkbox">Greeting cards
+              <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+              <input type="checkbox">Decoration
+              <span class="checkmark"></span>
+            </label>
+          </div><br>
+          <p class="product_price">LKR1000</p>
+          <button class="addtocart">Add to order</button>
+          <br>
+          <button class="fav_icon">Add to favorites</button>
+          <br>
+        </div>
+        <br>
+        <br>
+
+      </article>
+      <article>
+        <div class="tiles">
+          <img class="item_image" src="images/plates_trickeldown.jpg" alt="image">
+          <p class="product_item">Trickeldown Plates</p>
+          <div class="radio">
+
+            <input type="radio" id="small10" name="size10" value="small" class="small" checked>
+            <label for="small10">Small</label>
+
+            <input type="radio" id="medium10" name="size10" value="medium" class="medium">
+            <label for="medium10">Medium</label>
+
+            <input type="radio" id="large10" name="size10" value="large" class="large">
+            <label for="large10">Large</label>
+
+          </div><br>
+          <div class="checkboxes">
+            <label class="container">
+              <input type="checkbox">Packaging
+              <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+              <input type="checkbox">Greeting cards
+              <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+              <input type="checkbox">Decoration
+              <span class="checkmark"></span>
+            </label>
+          </div><br>
+          <p class="product_price">LKR2000</p>
+          <button class="addtocart">Add to order</button>
+          <br>
+          <button class="fav_icon">Add to favorites</button>
+          <br>
+        </div>
+        <br>
+        <br>
+
+      </article>
+      <article>
+        <div class="tiles">
+          <img class="item_image" src="images/mugs_trickeldown.jpg" alt="image">
+          <p class="product_item">Trickeldown Mug</p>
+          <div class="radio">
+
+            <input type="radio" id="small11" name="size11" value="small" class="small" checked>
+            <label for="small11">Small</label>
+
+            <input type="radio" id="medium11" name="size11" value="medium" class="medium">
+            <label for="medium11">Medium</label>
+
+            <input type="radio" id="large11" name="size11" value="large" class="large">
+            <label for="large11">Large</label>
+
+          </div><br>
+          <div class="checkboxes">
+            <label class="container">
+              <input type="checkbox">Packaging
+              <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+              <input type="checkbox">Greeting cards
+              <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+              <input type="checkbox">Decoration
+              <span class="checkmark"></span>
+            </label>
+          </div><br>
+          <p class="product_price">LKR2500</p>
+          <button class="addtocart">Add to order</button>
+          <br>
+          <button class="fav_icon">Add to favorites</button>
+          <br>
+        </div>
+        <br>
+        <br>
+
+      </article>
+      <article>
+        <div class="tiles">
+          <img class="item_image" src="images/soap_trickeldown.jpg" alt="image">
+          <p class="product_item">Trickeldown Soap</p>
+          <div class="radio">
+
+            <input type="radio" id="small12" name="size12" value="small" class="small" checked>
+            <label for="small12">Small</label>
+
+            <input type="radio" id="medium12" name="size12" value="medium" class="medium">
+            <label for="medium12">Medium</label>
+
+            <input type="radio" id="large12" name="size12" value="large" class="large">
+            <label for="large12">Large</label>
+
+          </div><br>
+          <div class="checkboxes">
+            <label class="container">
+              <input type="checkbox">Packaging
+              <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+              <input type="checkbox">Greeting cards
+              <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+              <input type="checkbox">Decoration
+              <span class="checkmark"></span>
+            </label>
+          </div><br>
+          <p class="product_price">LKR800</p>
+          <button class="addtocart">Add to order</button>
+          <br>
+          <button class="fav_icon">Add to favorites</button>
+          <br>
+        </div>
+        <br>
+        <br>
+
+      </article>
+    </div>
+    <div class="backtoearth_products" id="backtoearth_products">
+      <article>
+        <div class="tiles">
+          <img class="item_image" src="images/bags_backtoearth.jpg" alt="image">
+          <p class="product_item">Back to Earth Bag</p>
+          <div class="radio">
+
+            <input type="radio" id="small13" name="size13" value="small" class="small" checked>
+            <label for="small13">Small</label>
+
+            <input type="radio" id="medium13" name="size13" value="medium" class="medium">
+            <label for="medium13">Medium</label>
+
+            <input type="radio" id="large13" name="size13" value="large" class="large">
+            <label for="large13">Large</label>
+
+          </div><br>
+          <div class="checkboxes">
+            <label class="container">
+              <input type="checkbox">Packaging
+              <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+              <input type="checkbox">Greeting cards
+              <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+              <input type="checkbox">Decoration
+              <span class="checkmark"></span>
+            </label>
+          </div><br>
+          <p class="product_price">LKR1000</p>
+          <button class="addtocart">Add to order</button>
+          <br>
+          <button class="fav_icon">Add to favorites</button>
+          <br>
+        </div>
+        <br>
+        <br>
+
+      </article>
+      <article>
+        <div class="tiles">
+          <img class="item_image" src="images/plates__backtoearth.jpg" alt="image">
+          <p class="product_item">Back to Earth Plates</p>
+          <div class="radio">
+
+            <input type="radio" id="small14" name="size14" value="small" class="small" checked>
+            <label for="small14">Small</label>
+
+            <input type="radio" id="medium14" name="size14" value="medium" class="medium">
+            <label for="medium14">Medium</label>
+
+            <input type="radio" id="large14" name="size14" value="large" class="large">
+            <label for="large14">Large</label>
+
+          </div><br>
+          <div class="checkboxes">
+            <label class="container">
+              <input type="checkbox">Packaging
+              <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+              <input type="checkbox">Greeting cards
+              <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+              <input type="checkbox">Decoration
+              <span class="checkmark"></span>
+            </label>
+          </div><br>
+          <p class="product_price">LKR2000</p>
+          <button class="addtocart">Add to order</button>
+          <br>
+          <button class="fav_icon">Add to favorites</button>
+          <br>
+        </div>
+        <br>
+        <br>
+
+      </article>
+      <article>
+        <div class="tiles">
+          <img class="item_image" src="images/mugs__backtoearth.jpg" alt="image">
+          <p class="product_item">Back to Earth Mug</p>
+          <div class="radio">
+
+            <input type="radio" id="small15" name="size15" value="small" class="small" checked>
+            <label for="small15">Small</label>
+
+            <input type="radio" id="medium15" name="size15" value="medium" class="medium">
+            <label for="medium15">Medium</label>
+
+            <input type="radio" id="large15" name="size15" value="large" class="large">
+            <label for="large15">Large</label>
+
+          </div><br>
+          <div class="checkboxes">
+            <label class="container">
+              <input type="checkbox">Packaging
+              <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+              <input type="checkbox">Greeting cards
+              <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+              <input type="checkbox">Decoration
+              <span class="checkmark"></span>
+            </label>
+          </div><br>
+          <p class="product_price">LKR2500</p>
+          <button class="addtocart">Add to order</button>
+          <br>
+          <button class="fav_icon">Add to favorites</button>
+          <br>
+        </div>
+        <br>
+        <br>
+
+      </article>
+      <article>
+        <div class="tiles">
+          <img class="item_image" src="images/soap__backtoearth.jpg" alt="image">
+          <p class="product_item">Back to Earth Soap</p>
+          <div class="radio">
+
+            <input type="radio" id="small16" name="size16" value="small" class="small" checked>
+            <label for="small16">Small</label>
+
+            <input type="radio" id="medium16" name="size16" value="medium" class="medium">
+            <label for="medium16">Medium</label>
+
+            <input type="radio" id="large16" name="size16" value="large" >
+            <label for="large16">Large</label>
+
+          </div><br>
+          <div class="checkboxes">
+            <label class="container">
+              <input type="checkbox">Packaging
+              <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+              <input type="checkbox">Greeting cards
+              <span class="checkmark"></span>
+            </label><br>
+            <label class="container">
+              <input type="checkbox">Decoration
+              <span class="checkmark"></span>
+            </label>
+          </div><br>
+          <p class="product_price">LKR800</p>
+          <button class="addtocart">Add to order</button>
+          <br>
+          <button class="fav_icon">Add to favorites</button>
+          <br>
+        </div>
+        <br>
+        <br>
+
+      </article>
+    </div>
+
+  </div>
+</div>
+</body>
+
+</html>
