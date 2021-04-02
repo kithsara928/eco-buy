@@ -125,7 +125,6 @@ function addToCartClicked(event) {
   let price = shopItem.getElementsByClassName('product_price')[0].innerText
   let image = shopItem.getElementsByClassName('item_image')[0].src
   addItemToCart(name,price,image)
-  addItemToFavorites(name,price,image)
   updateCartTotal()
 }
 
